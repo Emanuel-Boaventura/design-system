@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Box, IBoxProps } from '@ignite-ui/react';
+import { Box, IBoxProps, Text } from '@ignite-ui/react';
 
 export default {
   title: 'Surfaces/Box',
@@ -7,13 +7,12 @@ export default {
 
   args: {
     children: (
-      <>
-        <span>test</span>
-      </>
+      <Text>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis,
+        quos.
+      </Text>
     ),
   },
 } as Meta<IBoxProps>;
 
 export const Primary: StoryObj<IBoxProps> = {};
-
-export const Big: StoryObj<IBoxProps> = {};
