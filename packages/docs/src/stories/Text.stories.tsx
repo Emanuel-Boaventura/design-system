@@ -13,9 +13,10 @@ export default {
 
 export const Primary: StoryObj<ITextProps> = {};
 
-export const CustomTag: StoryObj<ITextProps> = {
+export const StrongTag: StoryObj<ITextProps> = {
   args: {
-    children: 'Strong text',
+    children:
+      'STRONG Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ea.',
     as: 'strong',
   },
 };
