@@ -3,5 +3,10 @@
   "workspaces": [
     "packages/*"
   ],
-  "dependencies": {}
+  "scripts": {
+    "dev": "turbo run dev --parallel"
+  },
+  "devDependencies": {
+    "turbo": "^1.6.3"
+  }
 }
