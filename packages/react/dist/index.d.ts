@@ -1661,4 +1661,10 @@ interface ICheckboxProps extends ComponentProps<typeof CheckboxContainer> {
 }
 declare function Checkbox(props: ICheckboxProps): JSX.Element;
 
-export { Avatar, Box, Button, Checkbox, Heading, IAvatarProps, IBoxProps, IButtonProps, ICheckboxProps, IHeadingProps, ITextAreaProps, ITextInputProps, ITextProps, Text, TextArea, TextInput };
+interface IMultiStepProps {
+    size: number;
+    currentStep?: number;
+}
+declare function MultiStep({ size, currentStep }: IMultiStepProps): JSX.Element;
+
+export { Avatar, Box, Button, Checkbox, Heading, IAvatarProps, IBoxProps, IButtonProps, ICheckboxProps, IHeadingProps, IMultiStepProps, ITextAreaProps, ITextInputProps, ITextProps, MultiStep, Text, TextArea, TextInput };

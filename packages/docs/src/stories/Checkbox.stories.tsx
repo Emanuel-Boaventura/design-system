@@ -21,15 +21,3 @@ export default {
 } as Meta<ICheckboxProps>;
 
 export const Primary: StoryObj<ICheckboxProps> = {};
-
-// export const Disabled: StoryObj<ICheckboxProps> = {
-//   args: {
-//     disabled: true,
-//   },
-// };
-
-// export const WithPrefix: StoryObj<ICheckboxProps> = {
-//   args: {
-//     prefix: 'cal.com/',
-//   },
-// };
