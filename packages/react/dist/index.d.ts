@@ -831,6 +831,9 @@ declare const AvatarImage: _stitches_react_types_styled_component.StyledComponen
 interface IAvatarProps extends ComponentProps<typeof AvatarImage> {
 }
 declare function Avatar(props: IAvatarProps): JSX.Element;
+declare namespace Avatar {
+    var displayName: string;
+}
 
 declare const Button: _stitches_react_types_styled_component.StyledComponent<"button", {
     variant?: "primary" | "secondary" | "tertiary" | undefined;
@@ -1248,6 +1251,9 @@ interface ITextInputProps extends ComponentProps<typeof Input> {
     prefix?: string;
 }
 declare function TextInput({ prefix, ...props }: ITextInputProps): JSX.Element;
+declare namespace TextInput {
+    var displayName: string;
+}
 
 declare const TextArea: _stitches_react_types_styled_component.StyledComponent<"textarea", {}, {}, _stitches_react_types_css_util.CSS<{}, {
     colors: {
@@ -1660,11 +1666,17 @@ declare const CheckboxContainer: _stitches_react_types_styled_component.StyledCo
 interface ICheckboxProps extends ComponentProps<typeof CheckboxContainer> {
 }
 declare function Checkbox(props: ICheckboxProps): JSX.Element;
+declare namespace Checkbox {
+    var displayName: string;
+}
 
 interface IMultiStepProps {
     size: number;
     currentStep?: number;
 }
 declare function MultiStep({ size, currentStep }: IMultiStepProps): JSX.Element;
+declare namespace MultiStep {
+    var displayName: string;
+}
 
 export { Avatar, Box, Button, Checkbox, Heading, IAvatarProps, IBoxProps, IButtonProps, ICheckboxProps, IHeadingProps, IMultiStepProps, ITextAreaProps, ITextInputProps, ITextProps, MultiStep, Text, TextArea, TextInput };
